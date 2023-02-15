@@ -5,8 +5,8 @@
 
 def sum(a, b):
     if b == 0:
-        return 1
-    return sum(a, b - 1) * a
+        return a
+    return sum(a + 1, b - 1) 
 
 
 print(sum(int(input()), int(input())))
